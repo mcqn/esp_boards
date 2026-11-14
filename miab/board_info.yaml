@@ -1,0 +1,5 @@
+board: miab
+chip: esp32s3
+version: 1.0.0
+description: ESP32 S3-based board with SD card, I2S DAC, RTC and NFC
+manufacturer: MCQN Ltd

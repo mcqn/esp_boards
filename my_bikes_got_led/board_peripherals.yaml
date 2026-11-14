@@ -1,0 +1,32 @@
+# Peripherals Configuration
+peripherals:
+  - name: i2s_0
+    type: i2s
+    role: master
+    format: std-in
+    config:
+      sample_rate_hz: 48000
+      clk_src: I2S_CLK_SRC_DEFAULT
+      ext_clk_freq_hz: 0
+      mclk_multiple: 256
+      bclk_div: 8
+      data_bit_width: 16
+      slot_bit_width: I2S_SLOT_BIT_WIDTH_AUTO
+      slot_mode: I2S_SLOT_MODE_STEREO
+      ws_width: 16
+      ws_pol: false
+      bit_shift: true
+      left_align: true
+      big_endian: false
+      bit_order_lsb: false
+      pins:
+        mclk: -1
+        bclk: 0
+        ws: 1
+        dout: -1
+        din: 10
+      invert_flags:
+        mclk_inv: false
+        bclk_inv: false
+        ws_inv: false
+      port: 0

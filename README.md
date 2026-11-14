@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="docs/images/vendor-banner.svg" alt="YOUR_VENDOR_NAME" width="560">
+  <img src="docs/images/vendor-banner.svg" alt="MCQN" width="560">
 </p>
 
-# YOUR_VENDOR_NAME ESP Board Manager Board Pack
+# MCQN ESP Board Manager Board Pack
 
 [中文](README_CN.md)
 
-This component provides ESP Board Manager YAML definitions for YOUR_VENDOR_NAME
+This component provides ESP Board Manager YAML definitions for MCQN
 development boards. Applications can install it from the
 [ESP Component Registry](https://components.espressif.com) and select a board.
 
@@ -29,6 +29,13 @@ inventory of all physical hardware.
 | Photo | Board | Chip | Device capabilities |
 | --- | --- | --- | --- |
 | <a href="example_board"><img src="docs/images/example_board.svg" alt="Example Board" width="120"></a> | <a href="example_board">Example Board</a><br><code>example_board</code> | ESP32-S3 | None of the listed capabilities |
+| <img src="docs/images/example_board.svg" alt="Board photo" width="120"> | `miab` | ESP32-S3 | |
+
+### ESP32-C3
+
+| Photo | Board | Chip | Device capabilities |
+| --- | --- | --- | --- |
+| <img src="docs/images/example_board.svg" alt="Board photo" width="120"> | `my_bikes_got_led` | ESP32-C3 | |
 <!-- END SUPPORTED_BOARDS -->
 
 ## Use This Pack in an Application
@@ -42,7 +49,7 @@ python -m pip install --upgrade esp-bmgr-assist
 Add the released component, then select a board:
 
 ```bash
-idf.py add-dependency "YOUR_NAMESPACE/YOUR_COMPONENT_NAME"
+idf.py add-dependency "mcqn/esp_boards"
 idf.py bmgr -l
 idf.py bmgr -b <board_name>
 idf.py build

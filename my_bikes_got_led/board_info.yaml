@@ -1,0 +1,7 @@
+board: my_bikes_got_led
+chip: esp32c3
+version: 1.0.0
+description: >-
+  A small, battery powered ESP32 C3 board designed to drive Neopixel/WS2812 LED
+  strips
+manufacturer: MCQN Ltd

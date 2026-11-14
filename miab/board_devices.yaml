@@ -1,0 +1,50 @@
+# Devices Configuration
+devices:
+  - name: audio_codec_0
+    chip: PCM5102
+    type: audio_codec
+    init_skip: false
+    config:
+      dac_enabled: true
+      sys_cfg:
+        is_master: false
+        no_mclk: true
+      dac_cfg:
+        ref_enable: false
+        ref_dac_ch: 0
+        real_adc_data_ch: 0
+    peripherals:
+      - i2s_name: i2s_0
+        clk_src: 0
+        tx_aux_out_io: -1
+        tx_aux_out_line: 0
+        tx_aux_out_invert: false
+
+  - name: fs_fat_0
+    type: fs_fat
+    sub_type: sdmmc
+    init_skip: false
+    config:
+      mount_point: /sdcard
+      vfs_config:
+        format_if_mount_failed: false
+        max_files: 5
+        allocation_unit_size: 16384
+      sub_config:
+        slot: SDMMC_HOST_SLOT_1
+        frequency: SDMMC_FREQ_HIGHSPEED
+        bus_width: 4
+        slot_flags: SDMMC_SLOT_FLAG_INTERNAL_PULLUP
+        pins:
+          clk: 47
+          cmd: 2
+          d0: 21
+          d1: 14
+          d2: 45
+          d3: 48
+          d4: -1
+          d5: -1
+          d6: -1
+          d7: -1
+          cd: 1
+          wp: -1
