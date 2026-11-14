@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">Board photo placeholder</title>
+  <desc id="desc">Replace this placeholder with an actual product photo of your board.</desc>
+  <rect x="1" y="1" width="318" height="238" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="110" y="54" width="100" height="70" rx="10" fill="none" stroke="#94a3b8" stroke-width="5"/>
+  <path d="m123 112 23-24 16 15 17-21 18 30" fill="none" stroke="#94a3b8" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="139" cy="73" r="7" fill="#94a3b8"/>
+  <text x="160" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#52627a">BOARD PHOTO</text>
+  <text x="160" y="199" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#64748b">Replace with your product image</text>
+</svg>

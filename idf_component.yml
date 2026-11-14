@@ -1,0 +1,24 @@
+version: "0.7.0"
+description: Board definitions for ESP Board Manager
+license: Apache-2.0
+
+tags:
+  - esp_board_manager
+  - board_manager
+  - boards
+
+dependencies:
+  espressif/esp_board_manager:
+    version: ">=0.7.2"
+    require: public
+
+files:
+  exclude:
+    - ".git"
+    - ".github"
+    - ".cursor"
+    - "ci"
+    - "docs/images/image.png"
+    - "scripts"
+    - "VENDOR_GUIDE.md"
+    - "VENDOR_GUIDE_CN.md"
